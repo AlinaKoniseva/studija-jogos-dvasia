@@ -7,3 +7,10 @@ h3 {
     text-align: center;
     color: darkolivegreen;
 }
+
+body {
+    background-color: lightgoldenrodyellow;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
