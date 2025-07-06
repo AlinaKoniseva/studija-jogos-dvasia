@@ -1,299 +1,138 @@
 body {
-  font-family: "Poppins", sans-serif;
-  background: #300eb6;
-}
-
-.container {
-  max-width: 1400px;
-  height: 100%;
-  margin: 0 auto;
+  font-family: 'Arial', sans-serif;
+  background-color: black;
+  color: #212529;
+  margin: 0;
   padding: 0;
-}
-
-.grid {
-  display: grid;
-  grid-gap: 64px;
-}
-
-.grid-2-columns {
-  grid-template-columns: auto auto;
-}
-
-.grid-3-columns {
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-.grid-3-columns-first-narrow {
-  grid-template-columns: 1.5fr 2fr 2fr;
-}
-
-.card {
-  background: white;
-  padding: 32px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin: 30px 0;
-}
-
-.card-header.grid {
-  grid-gap: 0;
-}
-
-.embed {
-  width: 100%;
-  border: none;
-  aspect-ratio: 1 / 1;
-}
-
-.card-body {
-  padding: 30px 0;
-}
-
-.card-footer {
-  padding: 16px 0;
-  border-top: 1px solid #e8e8e8;
-}
-
-.img-responsive {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.img-responsive-cafe-photos {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.button {
-    display: block;
-    text-align: center;
-  letter-spacing: 3px;
-  padding: 16px 32px;
-  background-color: #462cb3;
-  color: white;
-  text-decoration: none;
-  border-radius: 4px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.5;
-  text-transform: uppercase;
-}
-
-.instagram-embeds {
-    margin: 30px 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-}
-
-section {
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 60px 100px;
-}
-
-section.secondary {
-  background: #f8f8f8;
-}
-
-section.secondary h2 {
-  padding: 20px 0;
-  line-height: 1.5px;
-  letter-spacing: 5px;
-  text-transform: uppercase;
 }
 
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(../media/tania-yoga.jpg);
+    aspect-ratio: 16/9;
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
   text-align: center;
-  padding: 200px 20px;
   margin: 0 auto;
+  padding: 0 0 650px 0;
 }
 
 header h1 {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 96px;
-  line-height: 1;
+  font-family: "Fredoka", sans-serif;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 1.5;
   margin: 30px 0;
+  text-align: left;
+  color: #f5f0e9;
 }
 
 header h2 {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 40px;
+  font-style: "Fredoka", sans-serif;
+  font-weight: lighter;
+  font-size: 16px;
   line-height: 1.5;
+  text-align: left;
+  color: #f5f0e9;
 }
 
-header h3 {
-  font-style: normal;
-  font-weight: 900;
-  font-size: 24px;
-  line-height: 1.5;
-  letter-spacing: 5px;
+.navbar {
+  margin: 0 50px;
 }
 
-header a {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.5;
+.navbar a {
+  color: #f5f0e9;
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar a.active{
+  color: #f5f0e9 !important;
+  font-weight: 600;
+}
+
+.nav-link {
   text-align: center;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  background: white;
+}
+
+.container {
+  width: 600px;
+  height: 100%;
+  margin: 0 50px;
+  padding: 50px 0;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 0;
+  padding: 40px 0;
+}
+
+.grid-2-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: left;
+}
+
+.btn-booking a {
+  background-color: #3B3622;
+  color: #f5f0e9;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  border-radius: 5px;
   text-decoration: none;
-  color: #272044;
-  padding: 16px 32px;
-  margin-top: 32px;
-  display: inline-block;
+  padding: 10px 20px;
+  font-weight: 500;
 }
 
-main {
-  background: white;
+.btn-booking a:hover {
+  background-color: #f5f0e9;
+  color: #3B3622;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-main h2 {
-  font-weight: 700;
+.btn-contact a {
+  color: #3B3622;
+  font-family: 'Inter', sans-serif;
   font-size: 16px;
-  line-height: 1.5px;
-  letter-spacing: 5px;
-  color: #272044;
-  opacity: 0.3;
-  text-transform: uppercase;
-  margin: 0;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-weight: 600;
+}
+.btn-contact a:hover {
+  color: #f5f0e9;
+  background-color: #3B3622;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  
 }
 
-main h3 {
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 1.5;
-  color: #272044;
-  margin: 0;
-}
+.arrow-circle {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 20px;
+      height: 20px;
+      border: 1px solid #3B3622;
+      border-radius: 50%;
+      cursor: pointer;
+      margin-left: 10px;
+      font-family: 'Inter', sans-serif;
+    }
 
-main h4 {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.5;
-  color: #272044;
-  margin: 0 0 16px;
-}
+    .arrow-circle::before {
+      content: '›'; /* Unicode character similar to the image arrow */
+      font-size: 15px;
+      color: #3B3622;
+      line-height: 1;
+    }
 
-main h5 {
-  font-weight: 700;
-  font-size: 13px;
-  line-height: 1.5;
-  color: #272044;
-  margin: 0 0 8px;
-}
+    .arrow-circle:hover::before {
+      color: #f5f0e9;
+    }
 
-main p {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #272044;
-  opacity: 0.7;
-}
-
-footer {
-  color: white;
-  background-image: linear-gradient(
-      rgba(39, 32, 68, 0.8),
-      rgba(39, 32, 68, 0.8)
-    ),
-    url(.././images/copenhagen1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-footer h3 {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.5;
-}
-
-footer p {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.5;
-  opacity: 0.9;
-  margin-right: 20px;
-}
-
-footer ul {
-  padding: 0;
-  margin: 0;
-}
-
-footer li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-footer a {
-  font-size: 14px;
-  color: white;
-  opacity: 0.7;
-}
-
-@media (max-width: 960px) {
-  header {
-    padding: 60px 0px;
-  }
-  header h1 {
-    font-size: 48px;
-  }
-
-  header h2 {
-    font-size: 20px;
-  }
-
-  header h3 {
-    font-size: 12px;
-  }
-
-  header a {
-    padding: 8px 16px;
-    font-size: 7px;
-  }
-
-  .grid {
-    grid-template-columns: 1fr;
-    grid-gap: 32px;
-  }
-
-  section {
-    padding: 15px 20px;
-  }
-
-  main h2 {
-    font-size: 8px;
-  }
-
-  main h3 {
-    font-size: 20px;
-  }
-
-  main p {
-    font-size: 8px;
-  }
-
-  .card-header img {
-    display: none;
-  }
-
-  .embed {
-    aspect-ratio: 16 / 9;
-  }
-}
+    .arrow-circle:hover {
+      border-color: #f5f0e9;
+    }
